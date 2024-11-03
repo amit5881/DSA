@@ -34,7 +34,7 @@ public class Housing {
 
     public static void main(String[] args) {
         housing(new int[] { 1,3,2,1,4,1,3,2,1,1,2 }, 8);
-//        housing(new int[] { 1,3,2,5 }, 7);
+        housing(new int[] { 1,3,2,5 }, 7);
         System.out.println();
         housingUsingPrefixSum(new int[] { 1,3,2,1,4,1,3,2,1,1,2 }, 8);
         System.out.println();
