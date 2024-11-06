@@ -1,7 +1,5 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import javax.swing.tree.TreeNode;
+import java.util.*;
 
 /*
 Given a binary array nums and an integer k, return the maximum number of consecutive 1's in the array if you can flip at most k 0's.
@@ -37,35 +35,7 @@ public class Main {
         arr[mid] = temp;
     }
 
+
     public static void main(String[] args) {
-        String input = "This:is*a.new*problem.statement:to-solve";
-
-        // Extract words by splitting with delimiters (:, *, -, .)
-        String[] words = input.split("[:*.-]");
-
-        // Extract and keep the delimiters in a list (this regex matches the delimiters)
-        List<String> delimiters = new ArrayList<>();
-        for (int i = 0; i < input.length(); i++) {
-            char ch = input.charAt(i);
-            if (ch == ':' || ch == '*' || ch == '-' || ch == '.') {
-                delimiters.add(String.valueOf(ch));
-            }
-        }
-
-        // Reverse the words
-        List<String> reversedWords = Arrays.asList(words);
-        Collections.reverse(reversedWords);
-
-        // Rebuild the output string by interleaving words and delimiters
-        StringBuilder result = new StringBuilder();
-        for (int i = 0; i < reversedWords.size(); i++) {
-            result.append(reversedWords.get(i));  // Append the word
-            if (i < delimiters.size()) {
-                result.append(delimiters.get(i));  // Append the corresponding delimiter
-            }
-        }
-
-        // Output the final result
-        System.out.println(result.toString());
     }
 }
