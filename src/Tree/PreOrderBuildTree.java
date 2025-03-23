@@ -80,8 +80,6 @@ public class PreOrderBuildTree {
         }
     }
 
-
-
     public static void main(String[] args) {
         Node root = buildTree();
         printTreePreOrder(root);

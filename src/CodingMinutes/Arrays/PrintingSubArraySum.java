@@ -80,6 +80,6 @@ public class PrintingSubArraySum {
     }
 
     public static void main(String[] args) {
-        System.out.println(maximumSubArraySum(new int[] {1, 3, 4, 0, -1, -1, -2}));
+        System.out.println(maximumSubArraySum(new int[] {1, 3, 4, 0, -1, -1, -2, -8, 10}));
     }
 }
