@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.Arrays;
 
 public class ValidSudoku {
 
@@ -52,61 +53,29 @@ public class ValidSudoku {
     }
 
     public static List<List<Integer>> getValidInput() {
-        char[][] board = {
-                {'5', '3', '.', '.', '7', '.', '.', '.', '.'},
-                {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
-                {'.', '9', '8', '.', '.', '.', '.', '6', '.'},
-                {'8', '.', '.', '.', '6', '.', '.', '.', '3'},
-                {'4', '.', '.', '8', '.', '3', '.', '.', '1'},
-                {'7', '.', '.', '.', '2', '.', '.', '.', '6'},
-                {'.', '6', '.', '.', '.', '.', '2', '8', '.'},
-                {'.', '.', '.', '4', '1', '9', '.', '.', '5'},
-                {'.', '.', '.', '.', '8', '.', '.', '7', '9'}
-        };
-
-        List<List<Integer>> boardList = new ArrayList<>();
-
-        for (char[] chars : board) {
-            List<Integer> row = new ArrayList<>();
-            for (char aChar : chars) {
-                if (aChar == '.') {
-                    row.add(0); // Empty cell
-                } else {
-                    row.add(aChar - '0'); // Convert char digit to int
-                }
-            }
-            boardList.add(row);
-        }
-        return boardList;
+        return Arrays.asList(
+                Arrays.asList(5, 3, 4, 6, 7, 8, 9, 1, 2),
+                Arrays.asList(6, 7, 2, 1, 9, 5, 3, 4, 8),
+                Arrays.asList(1, 9, 8, 3, 4, 2, 5, 6, 7),
+                Arrays.asList(8, 5, 9, 7, 6, 1, 4, 2, 3),
+                Arrays.asList(4, 2, 6, 8, 5, 3, 7, 9, 1),
+                Arrays.asList(7, 1, 3, 9, 2, 4, 8, 5, 6),
+                Arrays.asList(9, 6, 1, 5, 3, 7, 2, 8, 4),
+                Arrays.asList(2, 8, 7, 4, 1, 9, 6, 3, 5),
+                Arrays.asList(3, 4, 5, 2, 8, 6, 1, 7, 9));
     }
 
     public static List<List<Integer>> getInvalidInput() {
-        char[][] invalidBoard = {
-                {'5', '3', '.', '.', '7', '.', '.', '5', '.'}, // <-- Duplicate '5' in row
-                {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
-                {'.', '9', '8', '.', '.', '.', '.', '6', '.'},
-                {'8', '.', '.', '.', '6', '.', '.', '.', '3'},
-                {'4', '.', '.', '8', '.', '3', '.', '.', '1'},
-                {'7', '.', '.', '.', '2', '.', '.', '.', '6'},
-                {'.', '6', '.', '.', '.', '.', '2', '8', '.'},
-                {'.', '.', '.', '4', '1', '9', '.', '.', '5'},
-                {'.', '.', '.', '.', '8', '.', '.', '7', '9'}
-        };
-
-        List<List<Integer>> boardList = new ArrayList<>();
-
-        for (char[] chars : invalidBoard) {
-            List<Integer> row = new ArrayList<>();
-            for (char aChar : chars) {
-                if (aChar == '.') {
-                    row.add(0); // Empty cell
-                } else {
-                    row.add(aChar - '0'); // Convert char digit to int
-                }
-            }
-            boardList.add(row);
-        }
-        return boardList;
+        return Arrays.asList(
+                Arrays.asList(5, 3, 0, 0, 7, 0, 0, 5, 0), // Invalid: duplicate 5 in row
+                Arrays.asList(6, 0, 0, 1, 9, 5, 0, 0, 0),
+                Arrays.asList(0, 9, 8, 0, 0, 0, 0, 6, 0),
+                Arrays.asList(8, 0, 0, 0, 6, 0, 0, 0, 3),
+                Arrays.asList(4, 0, 0, 8, 0, 3, 0, 0, 1),
+                Arrays.asList(7, 0, 0, 0, 2, 0, 0, 0, 6),
+                Arrays.asList(0, 6, 0, 0, 0, 0, 2, 8, 0),
+                Arrays.asList(0, 0, 0, 4, 1, 9, 0, 0, 5),
+                Arrays.asList(0, 0, 0, 0, 8, 0, 0, 7, 9));
     }
 
 }
