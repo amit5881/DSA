@@ -33,10 +33,9 @@ public class LinkedListReversal {
 
         // create an array
         int[] tempArr = new int[listLength];
-        int i = 0;
         node = head;
-        while (node != null) {
-            tempArr[i++] = node.val;
+        for (int i = 0; i < listLength; i++) {
+            tempArr[i] = node.val;
             node = node.next;
         }
 
