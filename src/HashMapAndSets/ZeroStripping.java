@@ -84,12 +84,12 @@ public class ZeroStripping {
     }
 
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(zeroStrippingHashSets(Arrays.asList(
-                Arrays.asList(1,2,3,4,5),
-                Arrays.asList(6,0,8,9,10),
-                Arrays.asList(11,12,13,14,15),
-                Arrays.asList(16,17,18,19,0)
-        )).toArray()));
+//        System.out.println(Arrays.toString(zeroStrippingHashSets(Arrays.asList(
+//                Arrays.asList(1,2,3,4,5),
+//                Arrays.asList(6,0,8,9,10),
+//                Arrays.asList(11,12,13,14,15),
+//                Arrays.asList(16,17,18,19,0)
+//        )).toArray()));
 
         System.out.println(Arrays.toString(zeroStrippingInPlace(Arrays.asList(
                 Arrays.asList(1,2,3,4,5),
