@@ -1,15 +1,15 @@
 package LinkedLists;
 
-import static LinkedLists.List.printLinkedList;
+import static LinkedLists.Node.printLinkedList;
 
 public class RemoveKthLastNode {
 
-    public static List removeKthLastNode(List head, int k) {
-        List dummy = new List(-1);
+    public static Node removeKthLastNode(Node head, int k) {
+        Node dummy = new Node(-1);
         dummy.next = head;
 
-        List trailer = dummy;
-        List leader = dummy;
+        Node trailer = dummy;
+        Node leader = dummy;
 
         // move leader to the k steps ahead
         for (int i = 0; i < k; i++) {
@@ -32,15 +32,15 @@ public class RemoveKthLastNode {
     }
 
     public static void main(String[] args) {
-        List head = new List(1);
-        head.next = new List(2);
-        head.next.next = new List(4);
-        head.next.next.next = new List(7);
-        head.next.next.next.next = new List(3);
+        Node head = new Node(1);
+        head.next = new Node(2);
+        head.next.next = new Node(4);
+        head.next.next.next = new Node(7);
+        head.next.next.next.next = new Node(3);
 
         printLinkedList(head);
 
-        List result = removeKthLastNode(head, 2);
+        Node result = removeKthLastNode(head, 2);
         System.out.println();
         printLinkedList(result);
     }

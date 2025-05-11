@@ -1,13 +1,13 @@
 package LinkedLists;
 
-import static LinkedLists.List.printLinkedList;
+import static LinkedLists.Node.printLinkedList;
 
 public class LinkedListReversal {
 
-    public static List reverseLinkedListUsingArray(List head) {
+    public static Node reverseLinkedListUsingArray(Node head) {
         // fetch LL length
         int listLength = 0;
-        List node = head;
+        Node node = head;
         while (node != null) {
             listLength++;
             node = node.next;
@@ -22,22 +22,22 @@ public class LinkedListReversal {
         }
 
         // create list from array
-        List result = new List(tempArr[listLength - 1]);
-        List ptrResult = result;
+        Node result = new Node(tempArr[listLength - 1]);
+        Node ptrResult = result;
         for (int j = tempArr.length - 2; j >= 0; j--) {
-            ptrResult.next = new List(tempArr[j]);
+            ptrResult.next = new Node(tempArr[j]);
             ptrResult = ptrResult.next;
         }
 
         return result;
     }
 
-    private static List reverseLinkedListIterative(List head) {
-        List curr = head;
-        List prev = null;
+    private static Node reverseLinkedListIterative(Node head) {
+        Node curr = head;
+        Node prev = null;
 
         while (curr != null) {
-            List next = curr.next;
+            Node next = curr.next;
             curr.next = prev;
 
             prev = curr;
@@ -46,11 +46,11 @@ public class LinkedListReversal {
         return prev;
     }
 
-    private static List reverseLinkedListRecursive(List head) {
+    private static Node reverseLinkedListRecursive(Node head) {
         if (head == null || head.next == null) {
             return head;
         }
-        List newHead = reverseLinkedListRecursive(head.next);
+        Node newHead = reverseLinkedListRecursive(head.next);
         head.next.next = head;
         head.next = null;
 
@@ -58,9 +58,9 @@ public class LinkedListReversal {
     }
 
     public static void main(String[] args) {
-        List head = new List(1, new List(2, new List(4, new List(7, new List(3)))));
+        Node head = new Node(1, new Node(2, new Node(4, new Node(7, new Node(3)))));
         printLinkedList(head);
-        List result = reverseLinkedListRecursive(head);
+        Node result = reverseLinkedListRecursive(head);
         System.out.println();
         printLinkedList(result);
     }

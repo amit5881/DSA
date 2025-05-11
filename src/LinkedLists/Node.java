@@ -1,18 +1,18 @@
 package LinkedLists;
 
-public class List {
+public class Node {
     int val;
-    List next;
-    public List(int val, List next) {
+    Node next;
+    public Node(int val, Node next) {
         this.val = val;
         this.next = next;
     }
-    public List(int val) {
+    public Node(int val) {
         this.val = val;
         this.next = null;
     }
 
-    public static void printLinkedList(List head) {
+    public static void printLinkedList(Node head) {
         while (head != null) {
             System.out.print(head.val + " -> ");
             head = head.next;

@@ -61,8 +61,8 @@ public class FourSum {
 
     public static void main(String[] args) {
         List<List<Integer>> result = fourSumOptimised(new int[]{1,0,-1,0,-2,2}, 0);
-//        List<List<Integer>> result = fourSumOptimised(new int[]{2,2,2,2,2}, 8);
-//        List<List<Integer>> result = fourSum(new int[]{2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+//        Node<Node<Integer>> result = fourSumOptimised(new int[]{2,2,2,2,2}, 8);
+//        Node<Node<Integer>> result = fourSum(new int[]{2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
 //                2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
 //                ,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
 //                2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,

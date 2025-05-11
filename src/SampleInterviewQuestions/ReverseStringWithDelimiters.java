@@ -6,7 +6,7 @@ import java.util.List;
 public class ReverseStringWithDelimiters {
 
     public static String reverseWithDelimiters(String s) {
-        // List to store words and delimiters
+        // Node to store words and delimiters
         List<String> parts = new ArrayList<>();
 
         // Temporary StringBuilder to collect a word
