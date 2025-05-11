@@ -1,26 +1,8 @@
 package LinkedLists;
 
+import static LinkedLists.List.printLinkedList;
+
 public class LinkedListReversal {
-
-    public static class List {
-        int val;
-        List next;
-        public List(int val, List next) {
-            this.val = val;
-            this.next = next;
-        }
-        public List(int val) {
-            this.val = val;
-            this.next = null;
-        }
-    }
-
-    private static void printLinkedList(List head) {
-        while (head != null) {
-            System.out.print(head.val + " -> ");
-            head = head.next;
-        }
-    }
 
     public static List reverseLinkedListUsingArray(List head) {
         // fetch LL length
