@@ -1,4 +1,4 @@
-package HashMapAndSets;
+package ByteByteGo.HashMapAndSets;
 
 import java.util.ArrayList;
 import java.util.HashSet;

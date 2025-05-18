@@ -1,6 +1,6 @@
-package LinkedLists;
+package ByteByteGo.LinkedLists;
 
-import static LinkedLists.Node.printLinkedList;
+import static ByteByteGo.LinkedLists.Node.printLinkedList;
 
 public class RemoveKthLastNode {
 

@@ -1,4 +1,4 @@
-package LinkedLists;
+package ByteByteGo.LinkedLists;
 
 public class Node {
     int val;

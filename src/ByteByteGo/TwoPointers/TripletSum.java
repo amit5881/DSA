@@ -1,4 +1,4 @@
-package TwoPointers;
+package ByteByteGo.TwoPointers;
 
 import java.util.*;
 import java.util.stream.Stream;

@@ -1,4 +1,4 @@
-package FastAndSlowPointers;
+package ByteByteGo.FastAndSlowPointers;
 
 public class LinkedListMidPoint {
 

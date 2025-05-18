@@ -1,4 +1,4 @@
-package LinkedLists;
+package ByteByteGo.LinkedLists;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package TwoPointers;
+package ByteByteGo.TwoPointers;
 
 public class LargestContainer {
 
