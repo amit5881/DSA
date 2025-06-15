@@ -4,8 +4,8 @@ import java.util.PriorityQueue;
 
 public class MedianOfAnIntegerStream {
 
-    PriorityQueue<Integer> leftHalf = new PriorityQueue<>((a, b) -> Integer.compare(b, a));
-    PriorityQueue<Integer> rightHalf = new PriorityQueue<>();
+    PriorityQueue<Integer> leftHalf = new PriorityQueue<>((a, b) -> Integer.compare(b, a)); // max heap
+    PriorityQueue<Integer> rightHalf = new PriorityQueue<>(); // min-heap
 
     public void add(int num) {
         if (leftHalf.isEmpty() || num <= leftHalf.peek()) {
