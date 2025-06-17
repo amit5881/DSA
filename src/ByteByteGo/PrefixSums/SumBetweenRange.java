@@ -12,8 +12,8 @@ public class SumBetweenRange {
     }
 
     public static void main(String[] args) {
-        System.out.println(sumBetweenRange(new int[]{3, -7, 6, 0, -2, 5}, 0, 3));
-        System.out.println(sumBetweenRange(new int[]{3, -7, 6, 0, -2, 5}, 2, 4));
-        System.out.println(sumBetweenRange(new int[]{3, -7, 6, 0, -2, 5}, 2, 2));
+        System.out.println(sumBetweenRange(new int[]{ 3, -7, 6, 0, -2, 5 }, 0, 3));
+        System.out.println(sumBetweenRange(new int[]{ 3, -7, 6, 0, -2, 5 }, 2, 4));
+        System.out.println(sumBetweenRange(new int[]{ 3, -7, 6, 0, -2, 5 }, 2, 2));
     }
 }
