@@ -16,7 +16,7 @@ public class BuildBinaryTree {
     }
 
     private static TreeNode buildSubtree(int left, int right, int[] preOrder, int[] inOrder) {
-        if (left > right) return null; // nothing to be build between this range
+        if (left > right) return null; // nothing to be built between this range
 
         int val = preOrder[preOrderIndex];
         int inOrderIndex = inOrderIndexMap.get(val);
