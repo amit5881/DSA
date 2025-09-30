@@ -1,6 +1,5 @@
 package LeetCodeDaily;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class ValidTriangleNumber611 {
