@@ -6,7 +6,7 @@ public class CuttingWood {
 
     // return length of H
     public static int cuttingWood(int[] heights, int k) {
-        int left = 0, right = Arrays.stream(heights).max().orElse(-1);
+        int left = 0, right = Arrays.stream(heights).max().getAsInt();
         while (left < right) {
             int mid = ((left + right) / 2) + 1;
             if (cutsEnoughWood(mid, heights, k)) {
