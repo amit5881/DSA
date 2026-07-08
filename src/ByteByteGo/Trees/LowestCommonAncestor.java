@@ -4,6 +4,10 @@ public class LowestCommonAncestor {
 
     public static TreeNode lowestCommonAncestor;
 
+    /*
+    Time Complexity:   O(N)
+    Space Complexity:  O(H)
+     */
     public static TreeNode getLowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         dfs(root, p, q);
         return lowestCommonAncestor;

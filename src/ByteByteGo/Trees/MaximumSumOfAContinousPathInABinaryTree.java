@@ -4,6 +4,10 @@ public class MaximumSumOfAContinousPathInABinaryTree {
 
     public static int maxSum = Integer.MIN_VALUE;
 
+    /*
+    Time Complexity:   O(N)
+    Space Complexity:  O(H)
+     */
     private static int maxPathSum(TreeNode root) {
         maxPathSumHelper(root);
         return maxSum;

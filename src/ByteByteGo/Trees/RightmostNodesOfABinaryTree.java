@@ -7,6 +7,10 @@ import java.util.Queue;
 
 public class RightmostNodesOfABinaryTree {
 
+    /*
+    Time Complexity:   O(N)
+    Space Complexity:  O(N)
+     */
     public static List<Integer> rightmostNodesOfABinaryTree(TreeNode root) {
         if (root == null) return new ArrayList<>();
 

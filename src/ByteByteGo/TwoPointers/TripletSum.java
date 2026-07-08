@@ -5,6 +5,10 @@ import java.util.stream.Stream;
 
 public class TripletSum {
 
+    /*
+    Time: O(N^3)
+    Space: O(1)
+     */
     public static List<List<Integer>> tripletSumBruteForce(int[] arr) {
         Set<List<Integer>> resultSet = new HashSet<>();
 
@@ -21,6 +25,10 @@ public class TripletSum {
         return resultSet.stream().toList();
     }
 
+    /*
+        Time: O(N log N) + N × O(N) = O(N²)
+        Space: O(1)
+     */
     public static List<List<Integer>> tripletSumEqualsZeroOptimised(int[] arr) {
         List<List<Integer>> triplets = new ArrayList<>();
         Arrays.sort(arr);

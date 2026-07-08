@@ -4,6 +4,22 @@ public class DesignATrie {
 
     private final TrieNode root;
 
+    /*
+    INSERT:
+    Time  = O(L)
+    Space = O(L)
+
+    SEARCH:
+    Time  = O(L)
+    Space = O(1)
+
+    HAS PREFIX:
+    Time  = O(L)
+    Space = O(1)
+
+    Trie Space:
+    O(N × L)
+     */
     public DesignATrie() {
         root = new TrieNode();
     }

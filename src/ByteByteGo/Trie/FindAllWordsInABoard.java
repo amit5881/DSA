@@ -14,6 +14,10 @@ public class FindAllWordsInABoard {
         }
     }
 
+    /*
+        Time Complexity:  O(W × L + M × N × 4^L)
+        Space Complexity: O(W × L)
+     */
     public static List<String> findAllWordsInABoard(List<List<String>> board, List<String> words) {
         Trie root = new Trie();
         // insert all the words to the trie

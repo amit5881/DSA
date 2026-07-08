@@ -23,6 +23,10 @@ public class WidestBinaryTreeLevel {
         }
     }
 
+    /*
+    Time Complexity:   O(N)
+    Space Complexity:  O(N)
+     */
     public static int widestBinaryTreeLevel(TreeNode root) {
         if (root == null) return 0;
 

@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ReverseStringWithDelimiters {
 
-    public static String reverseWithDelimiters(String s) {
+    public static String reverseWithDelimiters1(String s) {
         // Node to store words and delimiters
         List<String> parts = new ArrayList<>();
 
@@ -54,6 +54,49 @@ public class ReverseStringWithDelimiters {
                 result.append(words.get(wordIdx--)); // Add reversed words
             } else {
                 result.append(part); // Add delimiters as is
+            }
+        }
+
+        return result.toString();
+    }
+
+    public static String reverseWithDelimiters(String s) {
+        List<String> parts = new ArrayList<>();
+        List<String> words = new ArrayList<>();
+
+        StringBuilder current = new StringBuilder();
+
+        // Step 1: Split into parts (words + delimiters)
+        for (char ch : s.toCharArray()) {
+            if (Character.isLetterOrDigit(ch)) {
+                current.append(ch);
+            } else {
+                if (!current.isEmpty()) {
+                    String word = current.toString();
+                    parts.add(word);
+                    words.add(word);
+                    current.setLength(0);
+                }
+                parts.add(String.valueOf(ch)); // delimiter
+            }
+        }
+
+        if (!current.isEmpty()) {
+            String word = current.toString();
+            parts.add(word);
+            words.add(word);
+        }
+
+        // Step 2: Reverse the words list
+        int idx = words.size() - 1;
+
+        // Step 3: Build the final result
+        StringBuilder result = new StringBuilder();
+        for (String part : parts) {
+            if (Character.isLetterOrDigit(part.charAt(0))) {
+                result.append(words.get(idx--)); // place reversed word
+            } else {
+                result.append(part); // delimiter stays the same
             }
         }
 

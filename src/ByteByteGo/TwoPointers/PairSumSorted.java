@@ -4,6 +4,10 @@ import java.util.Arrays;
 
 public class PairSumSorted {
 
+    /*
+    Time: O(N^2)
+    Space: O(1)
+     */
     public static int[] pairSumBruteForce(int[] arr, int target) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = i + 1; j < arr.length; j++) {
@@ -15,6 +19,10 @@ public class PairSumSorted {
         return new int[0];
     }
 
+    /*
+    Time: O(N)
+    Space: O(1)
+     */
     public static int[] pairSumTwoPointer(int[] arr, int target) {
         int left = 0;
         int right = arr.length - 1;

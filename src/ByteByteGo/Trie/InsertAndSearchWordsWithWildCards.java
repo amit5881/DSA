@@ -4,6 +4,16 @@ public class InsertAndSearchWordsWithWildCards {
 
     private static TrieNode root;
 
+    /*
+    Insert:
+    Time  = O(L)
+    Space = O(L)
+
+    Search:
+    Worst    = O(26^W)
+
+    Trie Space = O(N × L)
+     */
     public InsertAndSearchWordsWithWildCards() {
         root = new TrieNode();
     }

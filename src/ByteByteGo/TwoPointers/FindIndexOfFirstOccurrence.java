@@ -2,11 +2,19 @@ package ByteByteGo.TwoPointers;
 
 public class FindIndexOfFirstOccurrence {
 
+    /*
+    Time: O(N)
+    Space: O(1)
+     */
     private static int findIndexOfFirstOccurrenceSimple(String haystack, String needle) {
         if (needle.isEmpty()) return -1;
         return haystack.indexOf(needle);
     }
 
+    /*
+    Time: O(N)
+    Space: O(1)
+     */
     private static int findIndexOfFirstOccurrenceSlicing(String haystack, String needle) {
         if (haystack.length() < needle.length()) return -1;
         if (haystack.isEmpty() || needle.isEmpty()) return -1;
@@ -17,6 +25,10 @@ public class FindIndexOfFirstOccurrence {
         return -1;
     }
 
+    /*
+    Time: O(N)
+    Space: O(1)
+     */
     private static int findIndexOfFirstOccurrenceTwoPointers(String haystack, String needle) {
         if (haystack.isEmpty() || needle.isEmpty()) return -1;
         if (haystack.length() < needle.length()) return -1;

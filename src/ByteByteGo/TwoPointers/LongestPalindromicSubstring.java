@@ -2,6 +2,10 @@ package ByteByteGo.TwoPointers;
 
 public class LongestPalindromicSubstring {
 
+    /*
+    Time: O(N^3)
+    Space: O(1)
+     */
     private static String longestPalindromic(String str) {
         for (int length = str.length(); length > 0; length--) {
             for (int start = 0; start <= str.length() - length; start++) {

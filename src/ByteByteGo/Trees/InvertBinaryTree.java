@@ -4,6 +4,10 @@ import java.util.Stack;
 
 public class InvertBinaryTree {
 
+    /*
+    Time Complexity:   O(N)
+    Space Complexity:  O(H)
+     */
     public static void invertBinaryTree(TreeNode root) {
         if (root == null) return;
 
@@ -15,6 +19,10 @@ public class InvertBinaryTree {
         invertBinaryTree(root.right);
     }
 
+    /*
+    Time Complexity:   O(N)
+    Space Complexity:  O(H)
+     */
     public static void invertBinaryTreeIterative(TreeNode root) {
         if (root == null) return;
         Stack<TreeNode> stack = new Stack<>();
