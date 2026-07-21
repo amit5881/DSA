@@ -52,5 +52,7 @@ public class NextLexicographicalSequence {
         System.out.println(nextLexicographicalSequence("a")); // a
         System.out.println(nextLexicographicalSequence("aaaa")); // aaaa
         System.out.println(nextLexicographicalSequence("ynitsed")); // ynsdeit
+
+        System.out.println(nextLexicographicalSequence("abcedda")); // abdacde
     }
 }
