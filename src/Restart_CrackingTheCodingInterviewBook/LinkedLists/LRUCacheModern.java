@@ -26,7 +26,7 @@ public class LRUCacheModern<K, V> extends LinkedHashMap<K, V> {
     }
 
     public static void main(String[] args) {
-        LRUCacheModern<Integer, Integer> cache = new LRUCacheModern(2);
+        LRUCacheModern<Integer, Integer> cache = new LRUCacheModern<>(2);
 
         cache.put(1, 1);
         cache.put(2, 2);
