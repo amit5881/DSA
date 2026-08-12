@@ -1,4 +1,4 @@
-package Restart_CrackingTheCodingInterviewBook.BinarySearch.SortedArrays;
+package Restart_CrackingTheCodingInterviewBook.BinarySearch.NonIntuitiveSearchSpace;
 
 import java.util.Arrays;
 
